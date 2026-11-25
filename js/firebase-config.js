@@ -1,17 +1,20 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
-import { getFunctions } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-functions.js";
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
+import { getFunctions } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-functions.js";
 
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyDL0xrjt7viCK3oLasbLhDbF54ZjNm2EDw",
+  authDomain: "codearchive-e190f.firebaseapp.com",
+  projectId: "codearchive-e190f",
+  storageBucket: "codearchive-e190f.firebasestorage.app",
+  messagingSenderId: "209412208208",
+  appId: "1:209412208208:web:f04614a9eb44869634c355"
 };
+
 const app = initializeApp(firebaseConfig);
+
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-export const functions = getFunctions(app, "asia-southeast1");
+export const functions = getFunctions(app, "us-central1");
